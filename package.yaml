@@ -1,0 +1,31 @@
+name:                ade
+version:             0.0.0.1
+github:              "samueldurantes/ade"
+license:             MIT
+author:              "Samuel Durante"
+maintainer:          "samueldurante.h@gmail.com"
+copyright:           "2022 Samuel Durante"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/githubuser/ade#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- scotty
+- megaparsec
+- text
+
+default-extensions:
+  - OverloadedStrings
+  - LambdaCase
+
+executables:
+  ade-exe:
+    main:                Main.hs
+    source-dirs:         src
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N

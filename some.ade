@@ -1,0 +1,4 @@
+module Nat
+
+/// Add two
+add : Nat -> Nat -> Nat
