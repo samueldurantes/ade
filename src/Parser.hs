@@ -1,5 +1,6 @@
 module Parser
   ( Expr(..)
+  , Doc(..)
   , parseAll
   ) where
 
